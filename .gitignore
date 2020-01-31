@@ -1,0 +1,17 @@
+*.ipynb_checkpoints*
+*.csv
+*.pyc
+.idea/**
+.idea/vcs.xml
+./data/**
+*.gz
+metadata/Data_Challenge_Technical_Considerations.html
+*.docx
+EDA - cleaning.ipynb
+EDA - Correlation and Other studies.ipynb
+EDA - Geospatial.ipynb
+EDA - validation.ipynb
+EDA and validation.ipynb
+NY_EDA_Cleaning.ipynb
+metadata/~WRL1525.tmp
+*.html
