@@ -10,7 +10,24 @@ import numpy as np
 from time import strftime, localtime
 import json
 from datetime import datetime
+import pickle
 
+
+def save_to_disk(obj, filename):
+    try:
+        with open(filename, 'wb') as handle:
+            pickle.dump(obj, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    except Exception as e:
+        print(e)
+
+
+def load_from_disk(filename):
+    try:
+        with open(filename, 'rb') as handle:
+            b = pickle.load(handle)        
+            return b
+    except Exception as e:
+        print(e)   
 
 # Define some helper functions here
 def format_json(obj, indent=2):
